@@ -1,10 +1,4 @@
-import org.hamcrest.core.IsNull;
 import org.junit.jupiter.api.Test;
-
-import java.nio.charset.StandardCharsets;
-import java.util.*;
-import java.util.stream.Collectors;
-import java.util.stream.Stream;
 
 import static org.junit.jupiter.api.Assertions.*;
 
@@ -16,76 +10,6 @@ import static org.junit.jupiter.api.Assertions.*;
  */
 public class Leetcode_814_Binary_Tree_Pruning {
 
-    @Test
-    void test(){
-        String[] t = new String[10];
-
-        Set<String> set = new HashSet();
-
-        set.add("23");
-        set.add("11");
-        set.add("21");
-        set.add("22");
-        set.add("123");
-        set.add("321");
-        set.add("231");
-        set.add("111");
-        set.add("2");
-        set.add("6675");
-
-        for (String s : set) {
-            System.out.println(s);
-        }
-
-        t[0] = "23";
-        t[1] = "11";
-        t[2] = "21";
-        t[3] = "22";
-        t[4] = "123";
-        t[5] = "321";
-        t[6] = "231";
-        t[7] = "111";
-        t[8] = "2";
-        t[9] = "6675";
-        new ArrayList<String>().add("a");
-
-        Map<Character, String> m = new HashMap<>();
-        List<String> ss = Arrays.stream(t).sorted().collect(Collectors.toList());
-        for (String a : ss) {
-
-            final var c = a.charAt(0);
-
-            System.out.println(a);
-        }
-
-//        for (String aa : t) {
-//            final var length = aa.length();
-//            final var val = m.get(length);
-//
-//
-//            if (val != null) {
-//                StringBuilder sb = new StringBuilder(val);
-//                sb.append(",").append(aa);
-//
-//                m.put(length, sb.toString());
-//            } else {
-//                m.put(length, aa);
-//            }
-//        }
-//
-//
-        List<String> sorted = Arrays.stream(t).sorted((o1, o2) -> o2.length() - o1.length()).collect(Collectors.toList());
-//
-//        StringBuilder builder = new StringBuilder();
-//
-//        for (String a : sorted) {
-//            if (builder.indexOf(a) > -1) return false;
-//
-//            builder.append(a);
-//        }
-//
-//        return false;
-    }
 
     public class TreeNode {
         int val;
