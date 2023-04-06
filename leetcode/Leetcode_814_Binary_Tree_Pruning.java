@@ -20,6 +20,23 @@ public class Leetcode_814_Binary_Tree_Pruning {
     void test(){
         String[] t = new String[10];
 
+        Set<String> set = new HashSet();
+
+        set.add("23");
+        set.add("11");
+        set.add("21");
+        set.add("22");
+        set.add("123");
+        set.add("321");
+        set.add("231");
+        set.add("111");
+        set.add("2");
+        set.add("6675");
+
+        for (String s : set) {
+            System.out.println(s);
+        }
+
         t[0] = "23";
         t[1] = "11";
         t[2] = "21";

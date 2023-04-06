@@ -17,6 +17,7 @@ public class programers_42577_전화번호목록 {
                 Arguments.of(new String[]{"119", "97674223", "1195524421"}, false),
                 Arguments.of(new String[]{"123","456","789"}, true),
                 Arguments.of(new String[]{"12","123","1235","567","88"}, false)
+//                Arguments.of(new String[]{"2", "11"}, false)
 
         );
     }
@@ -34,6 +35,30 @@ public class programers_42577_전화번호목록 {
     /**
      * 최종
      *
+     * 중복이 불가라고 해서 set 사용
+     *
+     * @param phone_book
+     * @return
+     */
+    public boolean solution(String[] phone_book) {
+        Set<String> set = new HashSet<>();
+
+        for (String phone : phone_book){
+            set.add(phone);
+        }
+
+        for (String phone : phone_book) {
+            final var length = phone.length();
+
+            for (int i = 0; i < length; i++) {
+                if (set.contains(phone.substring(0, i))) return false;
+            }
+        }
+
+        return true;
+    }
+
+    /**
      * 정렬 후 다음 것만 비교
      * (정렬시 문자열이라 앞 숫자가 작은것부터 정렬됨)
      * ex)
@@ -42,7 +67,7 @@ public class programers_42577_전화번호목록 {
      * @param phone_book
      * @return
      */
-    public boolean solution(String[] phone_book) {
+    public boolean solution_sort(String[] phone_book) {
         List<String> sorted = Arrays.stream(phone_book)
                 .sorted()
                 .collect(Collectors.toList());

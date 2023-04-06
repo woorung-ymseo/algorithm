@@ -1,3 +1,5 @@
+> https://leetcode.com/problems/binary-tree-pruning/
+
 ![img.png](image/814_성능.png)
 ![img.png](image/814_문제.png)
 
