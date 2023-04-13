@@ -17,7 +17,6 @@ public class programers_42577_전화번호목록 {
                 Arguments.of(new String[]{"119", "97674223", "1195524421"}, false),
                 Arguments.of(new String[]{"123","456","789"}, true),
                 Arguments.of(new String[]{"12","123","1235","567","88"}, false)
-//                Arguments.of(new String[]{"2", "11"}, false)
 
         );
     }
