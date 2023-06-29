@@ -1,6 +1,6 @@
 > https://leetcode.com/problems/remove-duplicates-from-sorted-array/
 
-![img.png](img.png)
+![img.png](image/26_성능.png)
 
 ---
 ~~~java

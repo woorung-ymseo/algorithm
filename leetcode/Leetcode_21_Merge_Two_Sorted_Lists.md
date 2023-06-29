@@ -1,6 +1,6 @@
 > https://leetcode.com/problems/merge-two-sorted-lists/
 
-![img.png](21_성능.png)
+![img.png](image/21_성능.png)
 
 ---
 ~~~java

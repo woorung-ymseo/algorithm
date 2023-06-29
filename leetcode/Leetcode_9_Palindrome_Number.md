@@ -1,6 +1,6 @@
 > https://leetcode.com/problems/palindrome-number/
 
-![img.png](9_성능.png)
+![img.png](image/9_성능.png)
 
 ---
 ~~~java
